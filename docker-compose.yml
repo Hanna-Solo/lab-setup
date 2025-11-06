@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  attacker:
+    image: kalilinux/kali-rolling
+    container_name: attacker
+    command: [ "sleep", "infinity" ]
+    tty: true
+    networks: [ labnet ]
+  target-web:
+    image: bkimminich/juice-shop
+    container_name: target-web
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks: [ labnet ]
+  monitor:
+    image: nicolaka/netshoot
+    container_name: monitor
+    command: [ "sleep", "infinity" ]
+    tty: true
+    networks: [ labnet ]
+
+networks:
+  labnet:
+    driver: bridge
