@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Reporting
-If you discover a sensitive issue related to these lab configs, please contact: yourname@example.com (private report).
+If you discover a sensitive issue related to these lab configs, please contact: hannasolo87@gmail.com (private report).
 
 ## Scope
 - Intentionally vulnerable images are used only in private/local lab.
