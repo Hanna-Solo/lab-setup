@@ -10,10 +10,12 @@ This repository documents a reproducible lab for cybersecurity practice (Docker 
 ## Quick start (Docker)
 1. Inspect docs/lab-topology.md.
 2. Start lab (on your machine, not exposed to the internet):
-```bash
-docker compose up -d
-Use the attacker container (Kali-like) and monitor for analysis.
 
+~~~bash
+docker compose up -d
+~~~
+
+3. Use the attacker container (Kali-like) and monitor for analysis.
 
 Contents
 
